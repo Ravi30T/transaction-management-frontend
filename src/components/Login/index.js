@@ -42,7 +42,7 @@ const Login = props => {
                 localStorage.setItem('username', data.username)
                 localStorage.setItem('uid', data.userId)
                 Cookies.set('jwt_token', data.jwtToken, {expires: 30, path:'/'})
-                history.replace('/dashboard')
+                history.replace('/')
             }
             else{
                 setErrorMsgStatus(true)
@@ -55,7 +55,7 @@ const Login = props => {
 
     if (jwtToken !== undefined) {
         const {history} = this.props
-        history.replace('/dashboard')
+        history.replace('/')
       }
     
     return(

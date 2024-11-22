@@ -113,7 +113,7 @@ const TransactionDetails = props => {
                                 </div>
 
                                 <div className='back-btn-container'>
-                                    <Link to="/dashboard">
+                                    <Link to="/">
                                         <button className='back-to-dashboard-btn'> Back </button>
                                     </Link>
                                 </div>

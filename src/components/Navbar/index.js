@@ -14,7 +14,7 @@ const Navbar = props => {
     
     return(
         <nav className='nav-container'>
-            <Link to="/dashboard" className="logo-link-item"> <h1 className="app-name"> Online Bank </h1> </Link>
+            <Link to="/" className="logo-link-item"> <h1 className="app-name"> Online Bank </h1> </Link>
             
             <div className='logout-profile-btn-container'>
                 <Link to="/profile" className="profile-btn-link-item">
