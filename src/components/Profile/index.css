@@ -1,0 +1,160 @@
+/* Scoped Profile Styles */
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff; /* Card background */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for a clean look */
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    overflow: hidden; /* To ensure clean edges */
+}
+
+.profile-container h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937; /* Strong dark heading */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.profile-container h1::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4); /* Blue gradient for modern touch */
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile-container .profile-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.profile-container .profile-details p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #f9fafb; /* Light gray card-like rows */
+    border-radius: 8px;
+    border: 1px solid #e5e7eb; /* Subtle border for card separation */
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.profile-container .profile-details strong {
+    color: #111827; /* High contrast for key information */
+    font-weight: 600;
+}
+
+
+
+.profile-container .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+.profile-container .loader {
+    width: 60px;
+    height: 60px;
+}
+
+.profile-container button {
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4); /* Gradient for modern buttons */
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.profile-container button:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(90deg, #2563eb, #0891b2);
+}
+
+.bal-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Styles for positive balance */
+.account-balance {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #059669; /* Positive green tone */
+    border: 2px solid #10b981; /* Green border */
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Styles for zero balance */
+.red-balance {
+    color: #b91c1c; /* Red text */
+    border-color: #b91c1c; /* Red border */
+}
+
+.loader-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.loader {
+    width: 30px !important; 
+    height: 30px !important;
+}
+
+/* Responsive Design */
+
+/* For wider screens */
+@media (min-width: 768px) {
+    .profile-container {
+        max-width: 800px;
+        padding: 40px;
+    }
+
+    .profile-container h1 {
+        font-size: 2.5rem;
+    }
+
+    .profile-container .profile-details p {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+}
+
+/* For smaller screens */
+@media (max-width: 767px) {
+    .profile-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .profile-container h1 {
+        font-size: 2rem;
+    }
+
+    .profile-container .profile-details p {
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+
+    .profile-container .account-balance {
+        font-size: 1.2rem;
+    }
+}

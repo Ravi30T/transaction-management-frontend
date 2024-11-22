@@ -1,0 +1,177 @@
+/* Main Container */
+.transaction-details-main-container {
+    padding: 20px;
+    background-color: #f8fafc; /* Light background for page */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Adjust content alignment to start */
+  }
+  
+  /* Transaction Details Container */
+  .transaction-details-container {
+    width: 90%;
+    max-width: 600px;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb; /* Subtle border */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Clean shadow */
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .transaction-details-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Heading */
+  .transaction-details-container h1 {
+    font-size: 28px;
+    color: #1f2937; /* Darker text */
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+  }
+  
+  /* Text */
+  .transaction-details-container p {
+    font-size: 18px;
+    color: #374151; /* Neutral text color */
+    margin: 15px 0;
+  }
+  
+  .transaction-details-container p strong {
+    color: #111827; /* Bold strong text */
+  }
+  
+  /* Status and Type Badges */
+  .status,
+  .type {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-transform: capitalize;
+  }
+  
+  /* Status Colors */
+  .status-pending {
+    background-color: #fef3c7; /* Yellow background */
+    color: #b45309; /* Yellow text */
+  }
+  
+  .status-completed {
+    background-color: #d1fae5; /* Green background */
+    color: #065f46; /* Green text */
+  }
+  
+  .status-failed {
+    background-color: #fee2e2; /* Red background */
+    color: #b91c1c; /* Red text */
+  }
+  
+  /* Type Colors */
+  .type-deposit {
+    background-color: #e0f2fe; /* Blue background */
+    color: #0369a1; /* Blue text */
+  }
+  
+  .type-withdraw {
+    background-color: #fef2f2; /* Light red background */
+    color: #c53030; /* Red text */
+  }
+  
+  /* Back Button */
+  .back-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .back-to-dashboard-btn {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #3b82f6; /* Vibrant blue */
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-dashboard-btn:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+  }
+  
+  /* Error Message */
+  .transaction-details-err-msg {
+    text-align: center;
+    font-size: 18px;
+    color: #b91c1c; /* Red for errors */
+    margin-bottom: 20px;
+  }
+  
+  /* Loader Container */
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+  
+  /* Responsive Design */
+  
+  /* Mobile View - max-width: 767px */
+  @media (max-width: 767px) {
+    .transaction-details-main-container {
+      justify-content: flex-start; /* Fix the alignment */
+      padding-top: 50px; /* Adjust top padding to ensure it’s not stuck to top */
+    }
+  
+    .transaction-details-container {
+      width: 85%;
+      padding: 20px;
+    }
+  
+    .transaction-details-container h1 {
+      font-size: 24px;
+    }
+  
+    .transaction-details-container p {
+      font-size: 16px;
+    }
+  
+    .back-to-dashboard-btn {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  /* Desktop View - min-width: 768px */
+  @media (min-width: 768px) {
+    .transaction-details-container {
+      padding: 35px;
+    }
+  
+    .transaction-details-container h1 {
+      font-size: 32px;
+    }
+  
+    .transaction-details-container p {
+      font-size: 20px;
+    }
+  
+    .back-to-dashboard-btn {
+      font-size: 16px;
+      padding: 12px 24px;
+    }
+  }
+  

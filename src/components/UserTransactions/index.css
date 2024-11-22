@@ -1,0 +1,222 @@
+.users-data-container {
+    overflow-x: auto; 
+    width: 100%; 
+}
+
+.users-data-container table {
+    min-width: 800px; 
+}
+  
+.users-data-container::-webkit-scrollbar {
+    height: 8px;
+}
+  
+.users-data-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+    display: none;
+}
+
+.view-transaction-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.view-transaction-details-btn {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+    height: 25px;
+    color: blue;
+}
+
+.loader-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.loader svg {
+    width: 30px !important; 
+    height: 30px !important;
+}
+
+.status-pending {
+    color: blue;
+    font-weight: 500;
+}
+
+.status-completed {
+    color: green;
+    font-weight: 500;
+}
+
+.status-failed {
+    color: red;
+    font-weight: 500;
+}
+
+.type-deposit {
+    color: green;
+    font-weight: 500;
+}
+
+.type-withdraw {
+    color: red;
+    font-weight: 500;
+}
+
+.type, .status {
+    font-weight: normal;
+}
+
+.users-data-container {
+    overflow-y: auto; 
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+
+.users-data-container::-webkit-scrollbar {
+    display: none;
+}
+
+@media(max-width: 767px){
+    .users-data-container {
+        height: 55vh; 
+    }
+
+    .transactions-heading {
+        font-size: 18px;
+    }
+
+    .table-transaction-id {
+        width: 8vw;
+        font-size: 13px;
+        background-color: rgb(81, 214, 238);
+    }
+
+    .table-transaction-id-data {
+        width: 8vw;
+        text-align: center;
+        font-size: 13px;
+    }
+
+    .table-amount {
+        width: 8vw;
+        font-size: 13px;
+        background-color: rgb(81, 214, 238);
+    }
+
+    .table-amount-data {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .table-status {
+        width: 8vw;
+        font-size: 13px;
+        background-color: rgb(81, 214, 238);
+    }
+
+    .table-status-data {
+        width: 8vw;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    
+    .table-transaction-time {
+        width: 12vw;
+        font-size: 13px;
+        background-color: rgb(81, 214, 238);
+    }
+
+    .table-transaction-time-data{
+        font-size: 13px;
+        overflow-x: auto;
+        text-align: center;
+    }
+
+    .table-transaction-time-data::-webkit-scrollbar {
+        display: none;
+    }
+
+    .table-actions{
+        width: 10vw;
+        height: 25px;
+        background-color: rgb(81, 214, 238);
+        font-size: 13px;
+    }
+}
+
+@media(min-width: 768px){
+    .users-data-container {
+        height: 45vh; 
+    }
+
+    .table-transaction-id {
+        width: 22vw;
+        font-size: 14px;
+        background-color: rgb(81, 214, 238);
+    }
+
+    .table-transaction-id-data {
+        width: 20vw;
+        text-align: center;
+        font-size: 14px;
+        overflow-x: scroll;
+    }
+
+    .table-transaction-id-data::-webkit-scrollbar {
+        display: none;
+    }
+
+    .table-amount {
+        width: 13vw;
+        font-size: 14px;
+        background-color: rgb(81, 214, 238);
+    }
+
+    .table-amount-data {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .table-status {
+        width: 13vw;
+        font-size: 14px;
+        background-color: rgb(81, 214, 238);
+    }
+
+    .table-status-data {
+        width: 12vw;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .table-transaction-time {
+        width: 18vw;
+        font-size: 14px;
+        background-color: rgb(81, 214, 238);
+    }
+
+    .table-transaction-time-data{
+        font-size: 14px;
+        overflow-x: auto;
+        text-align: center;
+    }
+
+    .table-transaction-time-data::-webkit-scrollbar {
+        display: none;
+    }
+
+    .table-actions {
+        width: 10vw;
+        font-size: 14px;
+        background-color: rgb(81, 214, 238);
+        height: 27px;
+    }
+}

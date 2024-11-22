@@ -1,0 +1,270 @@
+.dashboard-main-container{
+    padding: 10px;
+}
+
+.welcome-msg {
+    font-size: 22px;
+}
+
+.user-dashboard-heading {
+    font-size: 20px;
+    text-align: center;
+    color: rgb(1, 10, 4);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.available-bal-new-transaction-btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.available-bal {
+    background-color: rgb(95, 228, 18);
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    height: 30px;
+    font-weight: 500;
+}
+
+.new-transaction-btn {
+    border: none;
+    outline: none;
+    border-radius: 8px; /* Soft rounded corners for a modern look */
+     /* Adjusted width for better proportion */
+    height: 45px; /* Slightly taller button for more emphasis */
+    background: linear-gradient(135deg, #3498db, #2980b9); /* Blue gradient background */
+    color: white;
+    font-weight: 600;
+    font-size: 14px; /* Slightly larger font size for readability */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase; /* Makes the button text more formal */
+    transition: all 0.3s ease; /* Smooth transition for all hover effects */
+    box-shadow: 0px 4px 8px rgba(52, 152, 219, 0.3); /* Subtle shadow for depth */
+    padding: 5px;
+}
+
+.new-transaction-btn:hover {
+    background: linear-gradient(135deg, #2980b9, #3498db); /* Reverse gradient on hover */
+    transform: translateY(-4px); /* Lift effect on hover */
+    box-shadow: 0px 6px 12px rgba(52, 152, 219, 0.4); /* Stronger shadow on hover */
+}
+
+.new-transaction-btn:active {
+    transform: translateY(0); /* Reset lift effect on click */
+    box-shadow: 0px 4px 8px rgba(52, 152, 219, 0.3); /* Reset shadow on click */
+}
+
+.new-transaction-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0px 0px 8px rgba(52, 152, 219, 0.5); /* Glow effect on focus */
+}
+
+
+.form-main-container {
+    background-color: rgb(238, 234, 234);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: -3px 9px 31px 3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 9px 31px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 9px 31px 3px rgba(0,0,0,0.75);
+        
+}
+
+.new-transaction-form-close-btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.new-transaction-form-close-btn {
+    background: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 22px;
+}
+
+.add-new-transaction-heading {
+    text-align: center;
+    font-size: 24px;
+}
+
+.transaction-amount-type-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.new-transaction-labels {
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+.user-confirmation-message-confirm-btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-confirmation-msg-container {
+    display: flex;
+    align-self: center;
+    margin-bottom: 5px;
+}
+
+.user-check-box {
+    cursor: pointer;
+    margin-left: 0px;
+    margin-top: 5px;
+}
+
+.confirm-btn {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    background-color: rgb(10, 14, 233);
+    color: #ffffff;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 70px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+.loader-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.user-confirmation-checkbox-container {
+    margin-bottom: 10px;
+}
+
+.no-transactions-msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-weight: 500;
+    font-size: 28px;
+    color: red;
+}
+
+@media(max-width: 767px){
+    .welcome-msg{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .user-dashboard-heading {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: purple;
+ 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        line-height: 1.5;
+        margin: 20px 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .form-main-container {
+        width: 80vw;
+    }
+
+    .add-new-transaction-heading {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .new-transaction-inputs-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .new-transaction-input-box {
+        width: 63vw;
+        outline-color: rgb(107, 17, 226);
+        height: 37px    ;
+        border-radius: 4px;
+        border: 1px solid grey;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .user-confirmation-label {
+        font-size: 13px;
+        text-align-last: center;
+    }
+
+    .no-transactions-msg {
+        font-size: 22px;
+    }
+
+    .new-transaction-type-input-box {
+        width: 63vw;
+        outline-color: rgb(107, 17, 226);
+        height: 37px;
+        border-radius: 4px;
+        border: 1px solid grey;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+    .new-transaction-btn {
+        font-size: 12px;
+        height: 40px;
+    }
+}
+
+@media(min-width: 768px){
+    .form-main-container {
+        width: 50vw;
+    }
+
+    .new-transaction-inputs-container {
+        display: flex;
+        flex-direction: column;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .new-transaction-input-box {
+        width: 30.80vw;
+        outline-color: rgb(107, 17, 226);
+        height: 38px;
+        border-radius: 4px;
+        border: 1px solid grey;
+        padding: 5px;
+    }
+
+    .new-transaction-type-input-box {
+        width: 30.80vw;
+        outline-color: rgb(107, 17, 226);
+        height: 38px;
+        border-radius: 4px;
+        border: 1px solid grey;
+        padding: 5px;
+        cursor: pointer;
+    }
+
+}
+
+

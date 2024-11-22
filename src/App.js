@@ -1,25 +1,21 @@
-import logo from './logo.svg';
+import { Switch, Route } from 'react-router-dom/cjs/react-router-dom.min';
+
+import Login from './components/Login';
+import Register from './components/Register';
+import ProtectedRoute from './components/ProtectedRoute';
+import Home from './components/Home';
+import TransactionDetails from './components/TransactionDetails';
+import Profile from './components/Profile';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <Switch>
+    <Route exact path="/login" component={Login} />
+    <Route exact path="/signup" component={Register} />
+    <ProtectedRoute exact path="/dashboard" component={Home} />
+    <ProtectedRoute exact path={`/transaction-details/:id`} component={TransactionDetails} />
+    <ProtectedRoute exact path='/profile' component={Profile} />
+  </Switch>
+)
 
 export default App;
