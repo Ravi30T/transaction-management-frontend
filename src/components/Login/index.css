@@ -71,6 +71,7 @@
     text-align: center;
     font-weight: 350;
     font-size: 14px;
+    margin-top: 10px;
 }
 
 .login-signup-link-item {
@@ -83,6 +84,7 @@
     font-size: 13px;
     color: red;
     text-align: center;
+    margin-top: 8px;
 }
 
 .password-box {
@@ -122,8 +124,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 75vh;
-        width: 80vw;
+        height: 60vh;
+        width: 85vw;
     }
 
     .username-password-label {
